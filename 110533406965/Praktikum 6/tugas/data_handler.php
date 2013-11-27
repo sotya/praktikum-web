@@ -25,8 +25,8 @@ function data_handler($root) {
                                 case 'del':
                                         if (isset($_GET['id']) && ctype_digit($_GET['id'])) {
                                                 $id = $_GET['id'];
-                                                $sql = "DELETE FROM mahasiswa WHERE nim='$id'"; 
-                                                $res = mysql_query($sql);
+                                                $ok = "DELETE FROM mahasiswa WHERE nim='$id'"; 
+                                                $res = mysql_query($ok);
                                                 if ($res) {
                                                         
                                                         ?>
